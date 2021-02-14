@@ -17,3 +17,7 @@ def dfs(graph, start, visited):
             dfs(graph, v, visited)
 
 dfs(graph, 'A', [])
+
+# stack으로 구현
+# def dfs_list(graph, start):
+    
