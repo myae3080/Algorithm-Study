@@ -16,7 +16,7 @@ graph = {
 #         if v not in visited:
 #             dfs(graph, v, visited)
 
-# dfs(graph, 'C', [])
+# dfs(graph, 'D', [])
 
 # visited(list)를 parameter로 안 받는 방식
 def dfs_list(graph, start):
@@ -27,15 +27,13 @@ def dfs_list(graph, start):
     while nodeList:
         node = nodeList.pop(0)
 
-        if node in visited:
-            # 확인용
-            print(node)
-        else:
+        if node not in visited:
             visited.append(node)
             # start에 근접한 node 추가
             nodeList.extend(graph[node])
+            nodeList.sort()
+            print(nodeList)
     
     return visited
 
-#  정상적인 탐색 X, 수정 필요.
-print(dfs_list(graph, 'C'))
+print(dfs_list(graph, 'D'))
