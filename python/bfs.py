@@ -3,14 +3,17 @@ graph = {
     'B': ['A'],
     'C': ['A', 'D'],
     'D': ['C', 'E', 'F'],
-    'E': [],
-    'F': []
+    'E': ['G'],
+    'F': [],
+    'G': ['E', 'H', 'I'],
+    'H': [],
+    'I': []
 }
 
 def bfs(graph, start):
     visited, to_visit = [], []
     
-    to_visit.append(start)
+    to_visit = [start]
 
     while to_visit:
         current_node = to_visit.pop(0)
