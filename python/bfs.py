@@ -10,6 +10,7 @@ graph = {
     'I': []
 }
 
+# 리스트를 이용한 bfs 구현
 def bfs(graph, start):
     visited, to_visit = [], []
     
@@ -25,4 +26,11 @@ def bfs(graph, start):
 
     return visited
 
-print(bfs(graph, 'A'))
+# print(bfs(graph, 'A'))
+
+#  deque를 이용하 bfs 구현
+def bfs_with_deque(graph, start):
+    visited = []
+
+    # print(deque([start]))
+    return visited
