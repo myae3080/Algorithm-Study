@@ -10,6 +10,7 @@ graph = {
     'I': []
 }
 
+
 # 리스트를 이용한 bfs 구현
 def bfs(graph, start):
     visited, to_visit = [], []
