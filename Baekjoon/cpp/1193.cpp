@@ -4,6 +4,24 @@
 using namespace std;
 
 int main() {
+    /* 
+        두 번째 풀이
+    */
+    int inputNum;
+    cin >> inputNum;
+
+    int colNum = 1;
+
+    while (inputNum > colNum) {
+        inputNum -= colNum;
+        colNum++;
+    }
+
+    (colNum % 2 == 0) ? (cout << inputNum << "/" << (colNum + 1) - inputNum) : (cout << (colNum + 1) - inputNum << "/" << inputNum);
+
+    /* 
+        첫 번째 풀이
+    */
     int inputNum;
     cin >> inputNum;
 
