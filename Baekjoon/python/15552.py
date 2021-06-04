@@ -4,7 +4,6 @@ import sys
 
 # input
 input_count = int(input())
-# int_list = [sys.stdin.readline().rstrip() for i in range(input_count)]
 int_list = []
 
 for i in range(input_count):
