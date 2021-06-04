@@ -7,7 +7,7 @@ int main(void) {
     int count, num1, num2 = 0;
 
     // deactivate sync between iostream and stdio
-	ios_base::sync_with_stdio(false);
+	ios::sync_with_stdio(false);
     cin.tie(NULL);
     
 	cin >> count;
