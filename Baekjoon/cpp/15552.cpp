@@ -6,6 +6,7 @@ int main(void) {
     int count, num1, num2 = 0;
 
     // deactivate sync between iostream and stdio
+	
 	std::ios_base::sync_with_stdio(false);
     std::cin.tie(NULL);
     
