@@ -18,4 +18,4 @@ for i in range(count):
 
     gcd_num = gcd(num2, num1)
 
-    print(gcd_num * (num1 // gcd_num) * (num2 // gcd_num))
+    print((num1 * num2) // gcd_num)
