@@ -22,5 +22,5 @@ rl.on("line", (line) => {
 
     rl.close();
 }).on("close", () => {
-  process.exit();
+    process.exit();
 });
