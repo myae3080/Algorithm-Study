@@ -17,22 +17,14 @@ while True:
         temp = target - 1
         page_list.append(temp)
 
-        if temp <= (page // 2):
-            page_list.append(page - temp) 
-            page_list.append(page - temp + 1)
-        else:
-            page_list.append(page - temp)
-            page_list.append(page - temp + 1)
+        page_list.append(page - temp)
+        page_list.append(page - temp + 1)
     else:
         temp = target + 1
         page_list.append(temp)
 
-        if temp <= (page // 2):
-            page_list.append(page - temp + 1) 
-            page_list.append(page - temp + 2)
-        else:
-            page_list.append(page - temp + 1) 
-            page_list.append(page - temp + 2)
+        page_list.append(page - temp + 1) 
+        page_list.append(page - temp + 2)
 
     for i, num in enumerate(sorted(page_list)):
         if i == (len(page_list) - 1):
