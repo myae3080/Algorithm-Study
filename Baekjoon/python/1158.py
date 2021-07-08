@@ -7,7 +7,6 @@ josephus = [i for i in range(1, n + 1)]
 result = []
 idx = k - 1
 
-# TODO indexError
 while josephus:
     if idx >= len(josephus):
         idx %= len(josephus)
