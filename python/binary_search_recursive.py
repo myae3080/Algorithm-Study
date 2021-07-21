@@ -9,11 +9,9 @@ def binary_search_recursive(target_list:list, start:int, end:int, target_val:int
         return False
 
     if target_list[mid] > target_val:
-        end = mid - 1
-        return binary_search_recursive(target_list, start, end, target_val)
+        return binary_search_recursive(target_list, start, mid - 1, target_val)
     elif target_list[mid] < target_val:
-        start = mid + 1
-        return binary_search_recursive(target_list, start, end, target_val)
+        return binary_search_recursive(target_list, mid + 1, end, target_val)
     else:
         return True
 
