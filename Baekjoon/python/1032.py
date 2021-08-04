@@ -1,5 +1,9 @@
+# source : https://www.acmicpc.net/problem/1032
+# string
+
 input_list = []
 
+# input
 [input_list.append(input()) for i in range(int(input()))]
 
 pattern_list = list(input_list[0])
