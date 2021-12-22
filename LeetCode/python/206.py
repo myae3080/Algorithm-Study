@@ -1,0 +1,24 @@
+# source : https://leetcode.com/problems/reverse-linked-list/
+
+from typing import Optional
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+        
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        prev = None
+        
+        while head:
+            temp, head = head, head.next
+            temp.next = None
+            
+            if prev:
+                temp.next, prev = prev, temp
+            else:
+                prev = temp
+                
+        return prev
