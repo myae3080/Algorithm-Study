@@ -1,8 +1,6 @@
 # source : https://www.acmicpc.net/problem/1654
 # binary search
 
-import sys
-
 # input
 k, n = map(int, input().split())
 lans = [int(input()) for _ in range(k)]
