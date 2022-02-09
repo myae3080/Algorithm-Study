@@ -1,5 +1,5 @@
 # source : https://www.acmicpc.net/problem/9251
-# dp
+# dp, LCS(Longest Common Subsequence)
 
 # input
 a, b = input(), input()
