@@ -33,3 +33,34 @@ class Solution:
                     island += 1
                     
         return island
+    
+    def numIslands2(self, grid: list[list[str]]) -> int:
+        x_limit, y_limit = len(grid), len(grid[0])
+        visited = set()
+        island = 0
+        directions = [
+            [1, 0],
+            [-1, 0],
+            [0, 1],
+            [0, -1]
+        ]
+        
+        def visit(x, y):
+            for d in directions:
+                new_x, new_y = x + d[0], y + d[1]
+
+                if (x_limit > new_x >= 0 and y_limit > new_y >= 0) and (new_x, new_y) not in visited and grid[new_x][new_y] == "1":
+                    visited.add((new_x, new_y))
+                    visit(new_x, new_y)
+        
+        for i in range(x_limit):
+            for j in range(y_limit):
+                val = grid[i][j]
+                
+                if val == "1" and (i, j) not in visited:
+                    island += 1
+                    visited.add((i, j))
+                    
+                    visit(i, j)
+                    
+        return island
