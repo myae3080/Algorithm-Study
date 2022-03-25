@@ -17,7 +17,6 @@ class Solution:
         is_uni = True
     
         while queue:
-            print(queue)
             node = queue.pop()
             
             if node.left:
