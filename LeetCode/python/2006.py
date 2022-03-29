@@ -12,3 +12,12 @@ class Solution:
                     count += 1
                     
         return count
+    
+    def countKDifference2(self, nums: list[int], k: int) -> int:
+        count = 0
+        
+        for i in range(len(nums)):
+            count += nums[i:].count(nums[i] + k)
+            count += nums[i:].count(nums[i] - k)
+                    
+        return count
