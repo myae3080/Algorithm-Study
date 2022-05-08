@@ -1,7 +1,7 @@
 # source : https://leetcode.com/problems/third-maximum-number/
 
 class Solution:
-    def thirdMax(self, nums: List[int]) -> int:
+    def thirdMax(self, nums: list[int]) -> int:
         nums_set = sorted(set(nums), reverse = True)
         
         if len(nums_set) >= 3:
