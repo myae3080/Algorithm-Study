@@ -1,6 +1,6 @@
 # source : https://www.acmicpc.net/problem/1009
 # math
-# TODO : 시간초과
+
 import sys
 
 # input
