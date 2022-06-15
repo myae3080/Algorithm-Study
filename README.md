@@ -5,5 +5,4 @@
 각 문제의 번호로 표시
 ### Baekjoon
 백준 문제풀이 : <https://www.acmicpc.net/>
-### LeetCode
-리트코드 문제풀이 : <https://leetcode.com/problemset/all/>
+
