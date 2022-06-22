@@ -1,7 +1,7 @@
 # source : https://www.acmicpc.net/problem/5430
 
 '''
-    D / 0 / [] case의 경우 출력이 error가 아닌 [] 이어야 하는 반례를 고려해야 함.
+    R / 0 / [] case의 경우 출력이 error가 아닌 [] 이어야 하는 반례를 고려해야 함.
 '''
 import sys
 from collections import deque
