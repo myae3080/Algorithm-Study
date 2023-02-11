@@ -1,0 +1,7 @@
+# source : https://www.acmicpc.net/problem/24723
+
+def main():
+    print(2 ** int(input()))
+
+if __name__ == '__main__':
+    main()
