@@ -1,6 +1,8 @@
 # source : https://www.acmicpc.net/problem/4963
 # bfs, dfs
 
+# TODO : bfs
+
 directions = [
     (-1, -1), (1, -1), (-1, 1), (1, 1),
     (0, -1), (-1, 0), (0, 1), (1, 0)
