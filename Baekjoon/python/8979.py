@@ -1,31 +1,28 @@
 # source : https://www.acmicpc.net/problem/8979
+# 100점
 
-# 40점
-def solution1():
-    import sys
-    
+import sys
+input = sys.stdin.readline
+
+def main():
     # input
-    input = sys.stdin.readline
     n, k = map(int, input().split())
-    countries = [list(map(int, input().split())) for _ in range(n)]
 
-    ranks = {}
-    for country in countries:
-        score = country[1] * 3 + country[2] * 2 + country[3] * 1
-        
-        if score in ranks:
-            ranks[score].append(country[0])
-        else:
-            ranks[score] = [country[0]]
-        
-    sorted_scores = sorted(ranks.keys(), reverse=True)
+    medals = []
+    for _ in range(n):
+        # input
+        medal = list(map(int, input().split()))
 
-    rank = 1
-    for score in sorted_scores:
-        if k in ranks[score]:
-            print(rank)
+        medals.append(medal)
+        if medal[0] == k:
+            target = medal[1:]
+
+    medals.sort(key=lambda c: (c[1], c[2], c[3]), reverse=True)
+
+    for i in range(n):
+        if medals[i][1:] == target:
+            print(i + 1)
             break
         
-        rank += len(ranks[score])
-        
-solution1()
+if __name__ == '__main__':
+    main()
