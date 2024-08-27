@@ -2,9 +2,7 @@
 
 def main():
     # input
-    A = input()
-    B = input()
-    S = input()
+    A, B, S = input(), input(), input()
     
     print('YES' if S in A and S in B else 'NO')
 
