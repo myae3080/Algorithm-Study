@@ -1,5 +1,8 @@
 # source : https://www.acmicpc.net/problem/9253
 
+import sys
+input = sys.stdin.readline
+
 def main():
     # input
     A, B, S = input(), input(), input()
