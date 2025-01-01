@@ -2,7 +2,7 @@
 
 def main():
     #input
-	nums = [int(input()) for _ in range(3)]
+    nums = [int(input()) for _ in range(3)]
 
     print(sorted(nums)[1])
 
