@@ -18,14 +18,14 @@ def main():
         print(pascal)
     elif num == '2':
         camel = ''
-        next_upper = False
+        is_next_upper = False
         for c in case:
             if c == '_':
-                next_upper = True
+                is_next_upper = True
             else:
-                if next_upper:
+                if is_next_upper:
                     camel += c.upper()
-                    next_upper = False
+                    is_next_upper = False
                 else:
                     camel += c
         pascal = camel[0].upper() + camel[1:]
