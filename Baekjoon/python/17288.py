@@ -1,7 +1,5 @@
 # source : https://www.acmicpc.net/problem/17288
 
-# TODO
-
 def main():
     # input
     S = input()
