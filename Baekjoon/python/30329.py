@@ -6,7 +6,7 @@ def main():
 
     result = 0
     for i in range(len(s)):
-        if s[i:i + 4] == 'kick':
+        if s[i] == 'k' and s[i:i + 4] == 'kick':
             result += 1
         else:
             continue
